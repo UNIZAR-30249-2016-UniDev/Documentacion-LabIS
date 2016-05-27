@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="13.2">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>511</x>
+      <y>21</y>
+      <w>84</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>SimuladorEspacio
+--
+run()
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>504</x>
+      <y>0</y>
+      <w>322</w>
+      <h>196</h>
+    </coordinates>
+    <panel_attributes>Aplicación
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>280</x>
+      <y>70</y>
+      <w>210</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>GUI
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>511</x>
+      <y>77</y>
+      <w>84</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>SimuladorHandler
+--
+init()
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>861</x>
+      <y>91</y>
+      <w>105</w>
+      <h>105</h>
+    </coordinates>
+    <panel_attributes>Infraestructura
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>609</x>
+      <y>49</y>
+      <w>77</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>EspaciosServlet
+--
+doGet()
+setResponse()
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>868</x>
+      <y>112</y>
+      <w>84</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>ConexionBD
+--
+iniciarConexion()
+getConexion()
+cerrarConexion()
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>511</x>
+      <y>133</y>
+      <w>140</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>Espacio2JSON
+--
+espacio2JSON(Espacio):String
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>686</x>
+      <y>252</y>
+      <w>154</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Servicio&gt;&gt;
+ApagadoLuces
+--
+sePuedeApagar(Espacio):boolean
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>686</x>
+      <y>392</y>
+      <w>224</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Servicio&gt;&gt;
+CambioTemperatura
+--
+sePuedeCambiar(Espacio,Temperatura):boolean
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>686</x>
+      <y>322</y>
+      <w>168</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Servicio&gt;&gt;
+EncendidoLuces
+--
+sePuedeEncender(Espacio):boolean
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>728</x>
+      <y>476</y>
+      <w>175</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>SimuladorLuces
+--
+simular(Espacio)
+debeEncenderse(Espacio, int):boolean
+debeApagarse(Espacio, int):boolean
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>735</x>
+      <y>553</y>
+      <w>105</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>SimuladorTemperatura
+--
+simular(Espacio)
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>294</x>
+      <y>343</y>
+      <w>126</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>BaseEntity
+--
+-id:String
+--
+getID():String
+equals(BaseEntity):boolean
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>301</x>
+      <y>252</y>
+      <w>84</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Interfaz&gt;&gt;
+BaseEntityInterfaz
+--
+getID():String
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>546</x>
+      <y>448</y>
+      <w>105</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entidad&gt;&gt;
+Laboratorio
+--
+capacidad:int
+ocupacion:int
+cambiarOcupacion(int)
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>385</x>
+      <y>448</y>
+      <w>105</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entidad&gt;&gt;
+WC
+--
+esDeChicas():boolean
+esDeChicos():boolean
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>441</x>
+      <y>259</y>
+      <w>196</w>
+      <h>161</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entidad&gt;&gt;
+Espacio
+--
+getLocalizacion():Localizacion
+getTipo():Tipo
+lucesEncendidas():boolean
+lucesApagadas():boolean
+encenderLuces()
+apagarLuces()
+getTemperatura():Temperatura
+cambiarTemperatura(Temperatura)
+getTemperaturaObjetivo():Temperatura
+cambiarTemperaturaObjetivo(Temperatura)
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>343</x>
+      <y>308</y>
+      <w>21</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>413</x>
+      <y>357</y>
+      <w>42</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;40.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>455</x>
+      <y>413</y>
+      <w>21</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>581</x>
+      <y>413</y>
+      <w>28</w>
+      <h>49</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;20.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>287</x>
+      <y>91</y>
+      <w>49</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>menus.js
+--
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>336</x>
+      <y>133</y>
+      <w>35</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>app.js
+--
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>287</x>
+      <y>133</y>
+      <w>35</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>misc.js
+--
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>343</x>
+      <y>91</y>
+      <w>56</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>servicios.js
+--
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>406</x>
+      <y>91</y>
+      <w>77</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>controladores.js
+--
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>378</x>
+      <y>133</y>
+      <w>49</w>
+      <h>35</h>
+    </coordinates>
+    <panel_attributes>index.html
+--
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>280</x>
+      <y>203</y>
+      <w>728</w>
+      <h>630</h>
+    </coordinates>
+    <panel_attributes>Dominio
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>294</x>
+      <y>574</y>
+      <w>119</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;OV&gt;&gt;
+SensorActuadorBinario
+--
+estaEncendido():boolean
+estaApagado():boolean
+actuar()
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>294</x>
+      <y>679</y>
+      <w>119</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;OV&gt;&gt;
+Temperatura
+--
+-temperatura: double
+--
+getTemperatura():double
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>574</y>
+      <w>196</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;OV&gt;&gt;
+SensorActuadorTemperatura
+--
+getTemperatura():Temperatura
+getTemperaturaObjetivo():Temperatura
+cambiarTemperatura(Temperatura)
+cambiarTemperaturaObjetivo(Temperatura)
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>686</y>
+      <w>161</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>Constantes
+--
+EDIFICIO {TQ,BETAN,ADA}
+TIPO {WC,LAB,AULA,DESPACHO}
+ESTADO {ON,OFF}
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>602</x>
+      <y>707</y>
+      <w>70</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;OV&gt;&gt;
+Punto
+--
+-x: double
+-y: double
+--
+getX():double
+getY():double
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>574</y>
+      <w>84</w>
+      <h>119</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;OV&gt;&gt;
+Localizacion
+--
+-punto: Punto
+-planta: int
+-edificio: int
+--
+getPunto():Punto
+getPlanta():int
+getEdificio():int
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>728</x>
+      <y>637</y>
+      <w>210</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Repositorio&gt;&gt;
+EspacioRepositorio
+--
+findDespachos(planta,edificio):Despachos[]
+findLaboratorios(planta,edificio):Laboratorios[]
+findWCs(planta,edificio):WCs[]
+findAulas(planta,edificio):Aulas[]
+findById(ID):Espacio
+findAll():Espacio[]
+update(Espacio)
+updateAll(Espacio[])
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>280</x>
+      <y>392</y>
+      <w>392</w>
+      <h>294</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>510.0;20.0;540.0;60.0;540.0;210.0;490.0;230.0;480.0;400.0;20.0;400.0;10.0;320.0;20.0;140.0;210.0;50.0;230.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>714</x>
+      <y>49</y>
+      <w>70</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>IdServlet
+--
+doGet()
+setResponse()
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>693</x>
+      <y>119</y>
+      <w>98</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>ActualizacionServlet
+--
+doGet()
+setResponse()
+style=autoresize
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
